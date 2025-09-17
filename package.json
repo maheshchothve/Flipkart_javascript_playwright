@@ -1,0 +1,14 @@
+{
+  "name": "flipkart-tests",
+  "version": "1.0.0",
+  "description": "Playwright automation for Flipkart - Adidas shoes add to cart",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.47.2"
+  }
+}
