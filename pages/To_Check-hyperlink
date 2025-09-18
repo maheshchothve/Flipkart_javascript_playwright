@@ -1,0 +1,16 @@
+const{expect}= require('@playwright/test');
+
+exports.To_Check_hyperlink=class To_Check_hyperlink{
+    constructor(page){
+        this.page=page;
+        this.hyperlink='//span[@class="pCGSTE"]';
+    }
+
+    async checkHyperlink(){
+        const link = await this.page.locator(this.hyperlink);
+        await this.page.waitForTimeout(2000);
+        await this.page.screenshot({path:'test-results/screenshot.png',fullPage:true});
+        const text = await link.textContent();
+        expect(text).toContain('© 2007-');
+    }
+}
