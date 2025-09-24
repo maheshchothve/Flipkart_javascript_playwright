@@ -23,4 +23,6 @@ test('Flipkart - Add Adidas shoes to cart', async ({ page }) => {
 
     // Step 5: Add to cart
     await productPage.addToCart();
+
+    await page.screenshot({path:'test-results/final.png',fullPage:true  });
 });
