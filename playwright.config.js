@@ -7,6 +7,7 @@ module.exports = defineConfig({
   use: {
     headless: false,
     screenshot: 'on', // Take screenshot for every test
-    video: 'retain-on-failure'
+    video: 'retain-on-failure',
+    trace:'on-first-retry'
   },
 });
