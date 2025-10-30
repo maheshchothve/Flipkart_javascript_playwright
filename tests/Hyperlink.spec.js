@@ -1,4 +1,4 @@
-const{To_Check_hyperlink}= require('../pages/To_Check-hyperlink');
+const{To_Check_hyperlink}= require('../pages/To_Check-hyperlink.js');
 const{test}=require('@playwright/test');
 
 test('Check the hyperlink at the bottom of the page',async({page})=>{

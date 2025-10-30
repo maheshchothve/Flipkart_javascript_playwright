@@ -11,7 +11,7 @@ test.skip('Add review for the product', async ({ page }) => {
     await page.click("//button[@id='button-review']");  
     const thankYouMessage = await page.locator("//div[@class='alert-success alert']/span").innerText();
     expect(thankYouMessage).toContain("Thank you for your review");
-    await page.screenshot({path:'screenshots/Added_Review.png',fullPage:true});
+    await page.screenshot({path:'screenshot/Added_Review.png',fullPage:true});
 });
 
 test('verify the pop-up', async({page})=>{
