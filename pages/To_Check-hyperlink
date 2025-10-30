@@ -1,9 +1,12 @@
-const{expect}= require('@playwright/test');
+import { expect, Page } from '@playwright/test';
 
-exports.To_Check_hyperlink=class To_Check_hyperlink{
-    constructor(page){
-        this.page=page;
-        this.hyperlink='//span[@class="pCGSTE"]';
+export class To_Check_hyperlink {
+    private page: Page;
+    private hyperlink: string;
+
+    constructor(page: Page) {
+        this.page = page;
+        this.hyperlink = '//span[@class="pCGSTE"]';
     }
 
     async checkHyperlink(){
