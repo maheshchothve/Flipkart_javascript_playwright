@@ -26,7 +26,7 @@ test('verify the pop-up', async({page})=>{
     await expect(page.locator('//p[@id="demo"]')).toHaveText("Hello John Doe! How are you today?");
     await page.screenshot({path:'screenshot/prompt alert.png'});
     await page.waitForTimeout(5000);
-    await page.screenshot({path:'screenshot/prompt_alert.png'});
+    
 
 
 });
